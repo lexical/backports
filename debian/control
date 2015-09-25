@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Keng-Yu Lin <kengyu@ubuntu.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
-Homepage: <insert the upstream URL, if relevant>
+Homepage: https://launchpad.net/backports
 #Vcs-Git: git://git.debian.org/collab-maint/backports.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/backports.git;a=summary
 
@@ -18,3 +18,9 @@ Package: backports-doc
 Architecture: all
 Description: documentation for backports
  <insert long description, indented with spaces>
+
+Package: backports-common
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Common helper scripts
+ Common helper script for post-inst, update the initramfs, etc.

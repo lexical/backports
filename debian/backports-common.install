@@ -1,0 +1,6 @@
+scripts/blacklist.sh	usr/share/backports-common
+scripts/compress_modules.sh	usr/share/backports-common
+scripts/uninstall.sh	usr/share/backports-common
+scripts/check_depmod.sh	usr/share/backports-common
+scripts/mod_helpers.sh	usr/share/backports-common
+scripts/update-initramfs.sh	usr/share/backports-common
