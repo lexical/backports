@@ -1,15 +1,13 @@
-diff --git a/Makefile.real b/Makefile.real
-index a0f4916..7249671 100644
---- a/Makefile.real
-+++ b/Makefile.real
-@@ -89,14 +89,14 @@ modules: backport-include/backport/autoconf.h
+--- backports.orig/Makefile.real
++++ backports/Makefile.real
+@@ -89,14 +89,14 @@
  
  .PHONY: install
  install: modules
 -	@$(MAKE) -C $(KLIB_BUILD) M=$(BACKPORT_DIR)			\
 -		INSTALL_MOD_DIR=$(KMODDIR) $(KMODPATH_ARG)		\
-+	$(MAKE) -C $(KLIB_BUILD) M=$(BACKPORT_DIR) \
-+		INSTALL_MOD_PATH=$(DESTDIR)/$(KMODDIR) $(KMODPATH_ARG) \
++	@$(MAKE) -C $(KLIB_BUILD) M=$(BACKPORT_DIR) \
++		INSTALL_MOD_PATH=$(shell pwd)/debian/tmp/$(KLIB)/$(KMODDIR) $(KMODPATH_ARG) \
  		modules_install
 -	@./scripts/blacklist.sh $(KLIB)/ $(KLIB)/$(KMODDIR)
 -	@./scripts/compress_modules.sh $(KLIB)/$(KMODDIR)
