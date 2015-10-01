@@ -1,26 +1,26 @@
-Source: backports
-Section: unknown
+Source: backports-3.19.0-28
+Section: kernel
 Priority: optional
 Maintainer: Keng-Yu Lin <kengyu@ubuntu.com>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), linux-headers-3.19.0-28
 Standards-Version: 3.9.4
 Homepage: https://launchpad.net/backports
 #Vcs-Git: git://git.debian.org/collab-maint/backports.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/backports.git;a=summary
 
-Package: backports
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
-
-Package: backports-doc
+Package: backports-doc-3.19.0-28
 Architecture: all
 Description: documentation for backports
  <insert long description, indented with spaces>
 
-Package: backports-common
+Package: backports-common-3.19.0-28
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Common helper scripts
  Common helper script for post-inst, update the initramfs, etc.
+
+Package: backports-wireless-3.19.0-28
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-image-3.19.0-28-generic
+Description: Linux kernel backports - Wireless drivers
+ Linux kernel backports. This package includes wireless drivers.
