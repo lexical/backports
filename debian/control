@@ -21,6 +21,6 @@ Description: Common helper scripts
 
 Package: backports-wireless-3.19.0-28
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, linux-image-3.19.0-28-generic
+Depends: ${shlibs:Depends}, ${misc:Depends}, backports-common-3.19.0-28, linux-image-3.19.0-28-generic
 Description: Linux kernel backports - Wireless drivers
  Linux kernel backports. This package includes wireless drivers.
