@@ -15,5 +15,16 @@ override_dh_auto_install:
 	mkdir -p debian/tmp/usr/share/backports-common
 	DISTDIR=debian/tmp make install
 
+override_dh_auto_clean:
+	@-dh_auto_clean
+	make clean
+	@-rm .config
+	@-rm .config.old
+	@-rm .kernel_config_md5
+	@-rm Kconfig.kernel
+	@-rm Kconfig.versions
+	@-rm backport-include/backport/autoconf.h
+	@-rm kconf/conf
+
 %:
 	dh $@ 
