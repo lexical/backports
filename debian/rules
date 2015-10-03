@@ -10,7 +10,7 @@ export DH_OPTIONS
 TARGET_KVERSION="`dpkg-parsechangelog|grep "^Source"|sed "s/Source:\ backports-\(.*\)/\1/g"`-generic"
 
 override_dh_auto_build:
-	KVERSION=$(TARGET_KVERSION) make defconfig-igb
+	KVERSION=$(TARGET_KVERSION) make defconfig-wifi
 	dh_auto_build -- DISTDIR=debian/tmp KVERSION=$(TARGET_KVERSION)
 
 override_dh_auto_install:

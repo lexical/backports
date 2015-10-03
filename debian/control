@@ -19,7 +19,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Common helper scripts
  Common helper script for post-inst, update the initramfs, etc.
 
-Package: backports-wireless-3.19.0-28
+Package: backports-wifi-3.19.0-28
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, backports-common-3.19.0-28, linux-image-3.19.0-28-generic
 Description: Linux kernel backports - Wireless drivers
