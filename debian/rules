@@ -7,17 +7,19 @@
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
 
+TARGET_KVERSION="`dpkg-parsechangelog|grep "^Source"|sed "s/Source:\ backports-\(.*\)/\1/g"`-generic"
+
 override_dh_auto_build:
-	make defconfig-igb
-	dh_auto_build -- DISTDIR=debian/tmp
+	KVERSION=$(TARGET_KVERSION) make defconfig-igb
+	dh_auto_build -- DISTDIR=debian/tmp KVERSION=$(TARGET_KVERSION)
 
 override_dh_auto_install:
 	mkdir -p debian/tmp/usr/share/backports-common
-	DISTDIR=debian/tmp make install
+	DISTDIR=debian/tmp KVERSION=$(TARGET_KVERSION) make install
 
 override_dh_auto_clean:
-	@-dh_auto_clean
-	make clean
+	@-dh_auto_clean -- KVERSION=$(TARGET_KVERSION)
+	KVERSION=$(TARGET_KVERSION) make clean
 	@-rm .config
 	@-rm .config.old
 	@-rm .kernel_config_md5
@@ -26,5 +28,7 @@ override_dh_auto_clean:
 	@-rm backport-include/backport/autoconf.h
 	@-rm kconf/conf
 
+override_dh_auto_test:
+
 %:
-	dh $@ 
+	dh $@

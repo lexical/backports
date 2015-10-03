@@ -1,0 +1,11 @@
+--- a/Makefile
++++ b/Makefile
+@@ -12,7 +12,7 @@
+ ifneq ($(origin KLIB), undefined)
+ KMODPATH_ARG := "INSTALL_MOD_PATH=$(KLIB)"
+ else
+-KLIB := /lib/modules/$(shell uname -r)/
++KLIB := /lib/modules/$(KVERSION)/
+ KMODPATH_ARG :=
+ endif
+ KLIB_BUILD ?= $(KLIB)/build/
