@@ -4,3 +4,4 @@ scripts/uninstall.sh	usr/share/backports-common
 scripts/check_depmod.sh	usr/share/backports-common
 scripts/mod_helpers.sh	usr/share/backports-common
 scripts/update-initramfs.sh	usr/share/backports-common
+lib/modules/3.19.0-28-generic/updates/lib/modules/3.19.0-28-generic/extra/compat/compat.ko /lib/modules/3.19.0-28-generic/extra/compat/compat.ko
