@@ -7,9 +7,11 @@
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
 
-TARGET_KVERSION="`dpkg-parsechangelog|grep "^Source"|sed "s/Source:\ backports-\(.*\)/\1/g"`-generic"
+TARGET_KVER="`dpkg-parsechangelog|grep "^Source"|sed "s/Source:\ [a-z-]*-\(.*\)/\1/g"`"
+TARGET_KVERSION="$(TARGET_KVER)-generic"
 
 override_dh_auto_build:
+	#KVERSION=$(TARGET_KVERSION) make defconfig-igb
 	KVERSION=$(TARGET_KVERSION) make defconfig-wifi
 	dh_auto_build -- DISTDIR=debian/tmp KVERSION=$(TARGET_KVERSION)
 
