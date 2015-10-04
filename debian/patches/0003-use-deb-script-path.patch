@@ -1,0 +1,22 @@
+--- a/scripts/compress_modules.sh
++++ b/scripts/compress_modules.sh
+@@ -2,7 +2,7 @@
+ 
+ set -e
+ 
+-source ./scripts/mod_helpers.sh
++source /usr/share/backports-common/mod_helpers.sh
+ 
+ if test "$(mod_filename mac80211)" = "mac80211.ko.gz" ; then
+ 	for driver in $(find "$1" -type f -name *.ko); do
+--- a/scripts/uninstall.sh
++++ b/scripts/uninstall.sh
+@@ -2,7 +2,7 @@
+ 
+ set -e
+ 
+-source ./scripts/mod_helpers.sh
++source /usr/share/backports-common/mod_helpers.sh
+ 
+ if test "$(mod_filename mac80211)" = "mac80211.ko.gz" ; then
+ 	compr=".gz"
