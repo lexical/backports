@@ -1,0 +1,3 @@
+version=3
+
+http://drvbp1.linux-foundation.org/~mcgrof/rel-html/backports/ .*stable.*backports-(.*)\.tar\.xz
