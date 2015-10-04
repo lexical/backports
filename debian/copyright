@@ -1,14 +1,248 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: backports
-Source: <url://example.com>
+Upstream-Name: Linux kernel backports
+Source: http://drvbp1.linux-foundation.org/~mcgrof/rel-html/backports/
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
-License: GPL-2.0+
+Copyright: 2015 Hauke Mehrtens <hauke@hauke-m.de>
+                Luis R. Rodriguez <mcgrof@do-not-panic.com>
+                Johannes Berg <johannes.berg@intel.com>
+                Ozan Çağlayan <ozancag@gmail.com>
+                Stefan Assmann <sassmann@kpanic.de>
+                Felix Fietkau <nbd@openwrt.org>
+                Pavel Roskin <proski@gnu.org>
+                John W. Linville <linville@tuxdriver.com>
+                Walter Goldens <goldenstranger@yahoo.com>
+                Arnaud Lacombe <lacombar@gmail.com>
+                Patrick Ziegler <patrick.ziegler@fh-kl.de>
+                Arend van Spriel <arend@broadcom.com>
+                Thierry Escande <thierry.escande@linux.intel.com>
+                Andy Gospodarek <andy@greyhouse.net>
+                Solomon Peachy <pizza@shaftnet.org>
+                Emmanuel Grumbach <emmanuel.grumbach@intel.com>
+                Eliad Peller <eliad@wizery.com>
+                Ben Hutchings <bhutchings@solarflare.com>
+                Bala Shanmugam <sbalashanmugam@atheros.com>
+                Al Viro <viro@zeniv.linux.org.uk>
+                Mark Brown <broonie@opensource.wolfsonmicro.com>
+                Tom Herbert <therbert@google.com>
+                Rick Farina <sidhayn@gmail.com>
+                Kshitij Kulshreshtha <kkhere.geo@gmail.com>
+                Hin-Tak Leung <hintak.leung@gmail.com>
+                Tim Gardner <tim.gardner@canonical.com>
+                Thomas Gleixner <tglx@linutronix.de>
+                Senthil Balasubramanian <senthilkumar@atheros.com>
+                Mathieu Olivari <mathieu@qca.qualcomm.com>
+                Luciano Coelho <coelho@ti.com>
+                Larry Finger <Larry.Finger@lwfinger.net>
+                Joe Perches <joe@perches.com>
+                Jiri Pirko <jiri@resnulli.us>
+                Eric W. Biederman <ebiederm@xmission.com>
+                Eric Dumazet <eric.dumazet@gmail.com>
+                David S. Miller <davem@davemloft.net>
+                Tejun Heo <tj@kernel.org>
+                Sasha Levin <sasha.levin@oracle.com>
+                Richard Cochran <richardcochran@gmail.com>
+                Jiri Slaby <jslaby@suse.cz>
+                Jesse Barnes <jbarnes@virtuousgeek.org>
+                Jean Delvare <khali@linux-fr.org>
+                Jason Baron <jbaron@redhat.com>
+                Imre Deak <imre.deak@intel.com>
+                Hugh Dickins <hughd@google.com>
+                Grazvydas Ignotas <notasas@gmail.com>
+                Florian Grandel <fgrandel@gmail.com>
+                Eric Dumazet <edumazet@google.com>
+                Arik Nemtsov <arik@wizery.com>
+                Alexander Aring <alex.aring@gmail.com>
+                Alan Cox <alan@linux.intel.com>
+                Zefir Kurtisi <zefir.kurtisi@neratec.com>
+                Xi Wang <xi.wang@gmail.com>
+                Waiman Long <Waiman.Long@hp.com>
+                Vasanthakumar Thiagarajan <vasanth@atheros.com>
+                Thierry Reding <thierry.reding@avionic-design.de>
+                Sujith Manoharan <c_manoha@qca.qualcomm.com>
+                Steven Luo <steven@steven676.net>
+                Stephen Hemminger <shemminger@vyatta.com>
+                Stanislaw Gruszka <sgruszka@redhat.com>
+                Simon Wunderlich <sw@simonwunderlich.de>
+                Sheng Yang <sheng@linux.intel.com>
+                Samuel Ortiz <sameo@linux.intel.com>
+                Philip A Prindeville <philipp@redfish-solutions.com>
+                Peter P Waskiewicz Jr <peter.p.waskiewicz.jr@intel.com>
+                Paul Fertser <fercerpav@gmail.com>
+                Patrick McHardy <kaber@trash.net>
+                Nicolas Pitre <nico@fluxnic.net>
+                Mohammed Shafi Shajakhan <mohammed@qca.qualcomm.com>
+                Ming Lei <ming.lei@canonical.com>
+                Matt Carlson <mcarlson@broadcom.com>
+                Marek Szyprowski <m.szyprowski@samsung.com>
+                Maarten Lankhorst <maarten.lankhorst@canonical.com>
+                Kshitij Kulshreshtha <kshitij@math.hu-berlin.de>
+                Konstantin Khlebnikov <khlebnikov@openvz.org>
+                Julian Calaby <julian.calaby@gmail.com>
+                John Stultz <john.stultz@linaro.org>
+                Jesper Dangaard Brouer <brouer@redhat.com>
+                Jean Pihet <j-pihet@ti.com>
+                Hannes Frederic Sowa <hannes@stressinduktion.org>
+                Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+                Francois Romieu <romieu@fr.zoreil.com>
+                David Herrmann <dh.herrmann@gmail.com>
+                Daniel Vetter <daniel.vetter@ffwll.ch>
+                Bjorn Helgaas <bhelgaas@google.com>
+                Alexey Dobriyan <adobriyan@gmail.com>
+                Akinobu Mita <akinobu.mita@gmail.com>
+                Yuval Mintz <yuvalmin@broadcom.com>
+                xiong <xiong@qca.qualcomm.com>
+                Vladimir Kondratiev <qca_vkondrat@qca.qualcomm.com>
+                Vitja Makarov <vitja.makarov@gmail.com>
+                Vincent Cuissard <cuissard@marvell.com>
+                Vadim Kochan <vadim4j@gmail.com>
+                Uwe Kleine-König <u.kleine-koenig@pengutronix.de>
+                Ulisses Furquim <ulisses@profusion.mobi>
+                Tomoki Sekiyama <tomoki.sekiyama@gmail.com>
+                Tomasz Stanislawski <t.stanislaws@samsung.com>
+                Tomas Winkler <tomas.winkler@intel.com>
+                Timo Lindhorst <TimoLindhorst@web.de>
+                Thomas Graf <tgraf@suug.ch>
+                Sven-Haegar Koch <haegar@sdinet.de>
+                Sven Eckelmann <sven@narfation.org>
+                Sumit Semwal <sumit.semwal@linaro.org>
+                Stuart Hodgson <smhodgson@solarflare.com>
+                Stephen Warren <swarren@nvidia.com>
+                Stephen Boyd <sboyd@codeaurora.org>
+                Stefan Richter <stefanr@s5r6.in-berlin.de>
+                stefan.kuhn@foss-group.ch <stefan.kuhn@foss-group.ch>
+                Srinivas Kandagatla <srinivas.kandagatla@st.com>
+                Shuah Khan <shuahkhan@gmail.com>
+                Serge E. Hallyn <serge.hallyn@canonical.com>
+                Sarah Sharp <sarah.a.sharp@linux.intel.com>
+                Sam Ravnborg <sam@ravnborg.org>
+                Rusty Russell <rusty@rustcorp.com.au>
+                Roman Macko <rmacko72@gmail.com>
+                Roel Kluin <roel.kluin@gmail.com>
+                Richard Röjfors <richard.rojfors@gmail.com>
+                Richard Farina <sidhayn@gmail.com>
+                Reinette Chatre <reinette.chatre@intel.com>
+                Rajkumar Manoharan <rmanoharan@atheros.com>
+                Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+                Pravin B Shelar <pshelar@nicira.com>
+                Philip A. Prindeville <philipp_subx@redfish-solutions.com>
+                Peter Hurley <peter@hurleysoftware.com>
+                pat-lkml <pat-lkml@erley.org>
+                Pat Erley <pat-lkml@erley.org>
+                Or Gerlitz <ogerlitz@mellanox.com>
+                Oliver Schinagl <oliver@schinagl.nl>
+                Nikolay Martynov <mar.kolya@gmail.com>
+                Nicolas Cavallari <Nicolas.Cavallari@lri.fr>
+                Nicholas Bellinger <nab@linux-iscsi.org>
+                Mridula Prakash <Mridula.Prakash@lnties.com>
+                Michał Mirosław <mirq-linux@rere.qmqm.pl>
+                Max Bowsher <maxb@f2s.com>
+                Matthew Wilcox <matthew@wil.cx>
+                Mark Brown <broonie@linaro.org>
+                Maarten Lankhorst <m.b.lankhorst@gmail.com>
+                Luciano Coelho <luciano.coelho@intel.com>
+                Linus Torvalds <torvalds@linux-foundation.org>
+                Liad Kaufman <liad.kaufman@intel.com>
+                Lars-Peter Clausen <lars@metafoo.de>
+                Kyle Manna <kyle.manna@fuel7.com>
+                Kevin Groeneveld <kgroeneveld@gmail.com>
+                Josh Watzman <jwatzman@andrew.cmu.edu>
+                Jonathan Liu <net147@gmail.com>
+                Jonathan DE CESCO <jonathan.de.cesco@intel.com>
+                Jonathan Cameron <jic23@cam.ac.uk>
+                John Stultz <johnstul@us.ibm.com>
+                John Fastabend <john.r.fastabend@intel.com>
+                Joerg Albert <jal2@gmx.de>
+                Jiri Slaby <jirislaby@gmail.com>
+                Jiri Pirko <jpirko@redhat.com>
+                Jiri Kosina <jkosina@suse.cz>
+                Jiang Liu <jiang.liu@huawei.com>
+                Jesse Brandeburg <jesse.brandeburg@intel.com>
+                Jens Axboe <jens.axboe@oracle.com>
+                Jean Delvare <jdelvare@suse.de>
+                Jason Wang <jasowang@redhat.com>
+                Jason Mobarak <jam@cozybit.com>
+                Jani Nikula <jani.nikula@intel.com>
+                Jacob Siverskog <jacob@teenageengineering.com>
+                Ingo Molnar <mingo@elte.hu>
+                Ido Yariv <ido@wizery.com>
+                Ian Campbell <Ian.Campbell@citrix.com>
+                Huaxu Wan <huaxu.wan@linux.intel.com>
+                Holger Schurig <hs4233@mail.mn-solutions.de>
+                Holger Schurig <holgerschurig@gmail.com>
+                Hiroshi DOYU <hdoyu@nvidia.com>
+                H Hartley Sweeten <hsweeten@visionengravers.com>
+                Herbert Xu <herbert@gondor.apana.org.au>
+                Henrik Rydberg <rydberg@euromail.se>
+                Helmut Schaa <helmut.schaa@googlemail.com>
+                Hante Meuleman <meuleman@broadcom.com>
+                Hans Verkuil <hans.verkuil@cisco.com>
+                Hans de Goede <hdegoede@redhat.com>
+                Gustavo Padovan <gustavo.padovan@collabora.co.uk>
+                Guenter Roeck <linux@roeck-us.net>
+                Greg Whiteley <greg.whiteley@gmail.com>
+                Greg Rose <gregory.v.rose@intel.com>
+                George Spelvin <linux@horizon.com>
+                Gabor Juhos <juhosg@openwrt.org>
+                Florian Fainelli <florian@openwrt.org>
+                Felix Bitterli <ic.felix@gmail.com>
+                Felipe Balbi <balbi@ti.com>
+                Fabio Porcedda <fabio.porcedda@gmail.com>
+                Fabio Baltieri <fabio.baltieri@gmail.com>
+                Eric Dumazet <dada1@cosmosbay.com>
+                Don Fry <donald.h.fry@intel.com>
+                Donald Dutile <ddutile@redhat.com>
+                Dominique Martinet <asmadeus@codewreck.org>
+                Dmitry Eremin-Solenikov <dmitry_eremin@mentor.com>
+                Dmitry Baryshkov <dbaryshkov@gmail.com>
+                dingtianhong <dingtianhong@huawei.com>
+                David Ward <david.ward@ll.mit.edu>
+                David Howells <dhowells@redhat.com>
+                David Herrmann <dh.herrmann@googlemail.com>
+                Dave Vasilevsky <dave@vasilevsky.ca>
+                Dave Chinner <dchinner@redhat.com>
+                Dave Airlie, Alon Levy
+                Dave Airlie <airlied@redhat.com>
+                Dave Airlie <airlied@gmail.com>
+                Dan Streetman <ddstreet@ieee.org>
+                Daniel Drake <dsd@laptop.org>
+                Daniel Borkmann <dborkman@redhat.com>
+                Dan Carpenter <dan.carpenter@oracle.com>
+                Cong Wang <amwang@redhat.com>
+                Chuck Lever <chuck.lever@oracle.com>
+                Christophe Ricard <christophe.ricard@gmail.com>
+                Chen Gang <gang.chen@asianux.com>
+                Carlo Caione <carlo@caione.org>
+                Bruno Randolf <br1@einfach.org>
+                Boris BREZILLON <boris.brezillon@free-electrons.com>
+                Blaise Gassend <blaise@willowgarage.com>
+                Bing Zhao <bzhao@marvell.com>
+                Benoit Taine <benoit.taine@lip6.fr>
+                Ben Greear <greearb@candelatech.com>
+                Bastien Nocera <hadess@hadess.net>
+                Bala Shanmugam <bkamatch@qca.qualcomm.com>
+                Axel Lin <axel.lin@ingics.com>
+                Avery Pennarun <apenwarr@gmail.com>
+                ASIC Felix <ic.felix@gmail.com>
+                Antti Palosaari <crope@iki.fi>
+                Anoop Karollil <anoop.karollil@gmail.com>
+                Andy Lutomirski <luto@amacapital.net>
+                Andy Gospodreak <andy@greyhouse.net>
+                Andy Gospodarek <gospo@redhat.com>
+                Andrei Warkentin <andreiw@motorola.com>
+                Andrei Emeltchenko <andrei.emeltchenko@intel.com>
+                Andreas Herrmann <andreas.herrmann3@amd.com>
+                Alex Elder <alex.elder@linaro.org>
+                Alexander Bondar <alexander.bondar@intel.com>
+                Alan Stern <stern@rowland.harvard.edu>
+License: GPL-2.0
 
 Files: debian/*
 Copyright: 2015 Keng-Yu Lin <kengyu@ubuntu.com>
+                Acelan Kao <chia-lin.kao@ubuntu.com>
+                Anthony Wong <anthony.wong@ubuntu.com>
+                Jesse Sung <jesse.sung@ubuntu.com>
+                Phidias Chiang <phidias.chiang@ubuntu.com>
 License: GPL-2.0+
 
 License: GPL-2.0+
@@ -28,7 +262,3 @@ License: GPL-2.0+
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-# Please also look if there are files or directories which have a
-# different copyright/license attached and list them here.
-# Please avoid to pick license terms that are more restrictive than the
-# packaged work, as it may make Debian's contributions unacceptable upstream.
